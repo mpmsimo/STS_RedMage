@@ -1,0 +1,11 @@
+{
+  "modid": "STS_RedMage",
+  "name": "The Red Mage",
+  "author_list": ["Reulan"],
+  "description": "Character mod for Slay the Spire,inspired by the Red Mage job in FFXIV and FFXI.",
+  "version": "0.1",
+  "sts_version": "01-03-2019",
+  "mts_version": "3.7.4",
+  "dependencies": ["basemod"],
+  "update_json": "https://api.github.com/repos/mpmsimo/STS_RedMage/releases/latest"
+}
