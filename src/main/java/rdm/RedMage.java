@@ -6,9 +6,11 @@ import rdm.cards.*;
 // BaseMod imports
 import basemod.BaseMod;
 import basemod.interfaces.EditCardsSubscriber;
+import basemod.interfaces.EditStringsSubscriber;
 import basemod.interfaces.PostBattleSubscriber;
 import basemod.interfaces.PostDungeonInitializeSubscriber;
 import basemod.interfaces.PostExhaustSubscriber;
+//import basemod.interfaces.SetUnlocksSubscriber;
 
 // ModTheSpire imports
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
@@ -18,8 +20,11 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
+import com.megacrit.cardcrawl.localization.CardStrings;
 
 // Third party imports
+import com.badlogic.gdx.Gdx;
+import java.nio.charset.StandardCharsets;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -28,12 +33,38 @@ public class RedMage implements
         PostExhaustSubscriber,
         PostBattleSubscriber,
         PostDungeonInitializeSubscriber,
+        //SetUnlocksSubscriber,
+        EditStringsSubscriber,
         EditCardsSubscriber {
 
     // Initialize logging for debugging purposes.
     public static final Logger logger = LogManager.getLogger(RedMage.class.getName());
 
-    // Mana mechanic tags
+    public RedMage() {
+        BaseMod.subscribe(this);
+        resetCounts();
+    }
+
+    public static void initialize() {
+        new RedMage();
+    }
+
+    // Load game description info from JSON
+    @Override
+    public void receiveEditStrings() {
+        logger.info("Writing all description strings in English.");
+        String cardStrings = Gdx.files.internal("localization/RedMage_CardStrings.json").readString(String.valueOf(StandardCharsets.UTF_8));
+        BaseMod.loadCustomStrings(CardStrings.class, cardStrings);
+        logger.info("Finished writing description strings.");
+    }
+
+    /*
+        Card Settings
+            - Create card tags
+            - Loading cards into the game
+     */
+
+    // Card Tagging
     @SpireEnum
     public static AbstractCard.CardTags BLACK_MANA;
     @SpireEnum
@@ -41,7 +72,6 @@ public class RedMage implements
     @SpireEnum
     public static AbstractCard.CardTags WHITE_MANA;
 
-    // Remaining character mechanic tags
     @SpireEnum
     public static AbstractCard.CardTags CHAINSPELL;
     @SpireEnum
@@ -53,16 +83,8 @@ public class RedMage implements
     @SpireEnum
     public static AbstractCard.CardTags PARALYZE;
 
-    public RedMage() {
-        BaseMod.subscribe(this);
-        resetCounts();
-    }
 
-    public static void initialize() {
-        new RedMage();
-    }
-
-    // Add new cards
+    // Load cards into game
     public void receiveEditCards() {
         logger.info("Advancing RDM level to 70.");
 
@@ -84,7 +106,12 @@ public class RedMage implements
         logger.info("Job and role abilities have been added.");
     }
 
-    // Add new keywords
+
+    /*
+        Keywords
+            - Add RDM mechanics as keywords
+     */
+
     public void receiveEditKeywords() {
         logger.info("Adding RDM keywords.");
         BaseMod.addKeyword(new String[]{"Dualcast"},
@@ -97,7 +124,7 @@ public class RedMage implements
                 "Your next Verthunder is replaced with Verfire.");
         BaseMod.addKeyword(new String[]{"Verstone Ready"},
                 "Your next Veraero is replaced with Verstone.");
-        logger.info("RDM keywords have been added.");
+        logger.info("RDM keywords have been added!");
     }
 
     private int count, totalCount;

@@ -1,0 +1,22 @@
+{
+  "RDM:Strike": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "RDM:Defend": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "RDM:Jolt": {
+    "NAME": "Jolt",
+    "DESCRIPTION": "Deal !D damage. Gain !CM combined mana."
+  },
+  "RDM:Bio": {
+    "NAME": "Bio",
+    "DESCRIPTION": "Deal !D poison. Gain !CM combined mana."
+  },
+  "RDM:Verflare": {
+    "NAME": "Verflare",
+    "DESCRIPTION": "Deal !D damage. Gain !BM black mana."
+  }
+}
