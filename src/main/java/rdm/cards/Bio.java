@@ -1,13 +1,12 @@
 package rdm.cards;
 
-import rdm.RedMage;
+import rdm.RedMageMod;
 
 import basemod.abstracts.CustomCard;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -18,7 +17,7 @@ import com.megacrit.cardcrawl.powers.PoisonPower;
 public class Bio extends CustomCard {
 
     // Card description
-    public static final String ID = "RDM:Bio";
+    public static final String ID = "RedMageJob:Bio";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
@@ -55,7 +54,7 @@ public class Bio extends CustomCard {
                 //AbstractCardEnum.REDMAGE_COLOR,
                 CardRarity.COMMON,
                 CardTarget.ENEMY);
-        tags.add(RedMage.COMBINED_MANA);
+        tags.add(RedMageMod.COMBINED_MANA);
         this.magicNumber = this.baseMagicNumber = POTENCY;
     }
 

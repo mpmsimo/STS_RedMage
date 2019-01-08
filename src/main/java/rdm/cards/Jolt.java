@@ -1,6 +1,6 @@
 package rdm.cards;
 
-import rdm.RedMage;
+import rdm.RedMageMod;
 
 import basemod.abstracts.CustomCard;
 
@@ -18,7 +18,7 @@ import com.megacrit.cardcrawl.powers.VulnerablePower;
 public class Jolt extends CustomCard {
 
     // Card description
-    public static final String ID = "RDM:Jolt";
+    public static final String ID = "RedMageJob:Jolt";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
@@ -53,7 +53,7 @@ public class Jolt extends CustomCard {
                 //AbstractCardEnum.REDMAGE_COLOR,
                 CardRarity.COMMON,
                 CardTarget.ENEMY);
-        tags.add(RedMage.COMBINED_MANA);
+        tags.add(RedMageMod.COMBINED_MANA);
         this.damage = this.baseDamage = ATTACK_DMG;
     }
 
