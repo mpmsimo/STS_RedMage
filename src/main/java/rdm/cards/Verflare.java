@@ -1,7 +1,6 @@
 package rdm.cards;
 
-import rdm.RedMage;
-import rdm.patches.AbstractCardEnum;
+import rdm.RedMageMod;
 
 import basemod.abstracts.CustomCard;
 
@@ -17,7 +16,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 public class Verflare extends CustomCard {
 
     // Card description
-    public static final String ID = "RDM:Verflare";
+    public static final String ID = "RedMageJob:Verflare";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
@@ -52,7 +51,7 @@ public class Verflare extends CustomCard {
                 //AbstractCardEnum.REDMAGE_COLOR,
                 AbstractCard.CardRarity.UNCOMMON,
                 AbstractCard.CardTarget.ENEMY);
-        tags.add(RedMage.BLACK_MANA);
+        tags.add(RedMageMod.BLACK_MANA);
         this.isEthereal = true;
         this.damage = this.baseDamage = ATTACK_DMG;
     }

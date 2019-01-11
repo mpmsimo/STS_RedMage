@@ -1,0 +1,53 @@
+{
+  "RDM:RDMSoulgem": {
+    "NAME": "Soul of the Red Mage",
+    "FLAVOR": "",
+    "DESCRIPTIONS": [
+      "Allows use of RDM abilities.\n+1 Mind."
+    ]
+  },
+  "RDM:RDWSoulgem": {
+    "NAME": "Soul of the Red Wizard",
+    "FLAVOR": "",
+    "DESCRIPTIONS": [
+      "Permanently replaces Verfire with Verflare, in addition to Verstone with Verholy.\n+2 Mind."
+    ]
+  },
+  "RDM:BlackManaMateria": {
+    "NAME": "Black Mana Materia",
+    "FLAVOR": "A small black pearl that overflows with dark magic.",
+    "DESCRIPTIONS": [
+      "Start combat with +25 Black Mana."
+    ]
+  },
+  "RDM:WhiteManaMateria": {
+    "NAME": "White Mana Materia",
+    "FLAVOR": "A small white pearl that shines with holy magic.",
+    "DESCRIPTIONS": [
+      "Start combat with +25 White Mana."
+    ]
+  },
+  "RDM:Thunderstone": {
+    "NAME": "Thunderstone",
+    "FLAVOR": "A spectacular rapier forged from the elements itself.",
+    "DESCRIPTIONS": [
+      "Start combat with Dualcast active."
+    ]
+  },
+  "RDM:FeatheredCap": {
+    "NAME": "Feathered Cap",
+    "FLAVOR": "A traditional red mage hat with a white feather sticking out from the top.",
+    "DESCRIPTIONS": [
+      "Start combat with Enhanced Riposte which costs 0."
+    ]
+  },
+  "RDM:": {
+    "NAME": "Fencing Degen",
+    "FLAVOR": "A powerful but archaic relic, this weapon is heavy to the hand.",
+    "DESCRIPTIONS": [
+      "Start combat with 10 Combined Mana\n+1 Mind\n+1 Strength"
+    ]
+  }
+}
+
+
