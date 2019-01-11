@@ -1,8 +1,7 @@
 package rdm;
 
 // Local imports
-import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.localization.RelicStrings;
+import com.badlogic.gdx.graphics.Texture;
 import rdm.assets.RedMageAssetPaths;
 import rdm.cards.*;
 import rdm.characters.RedMageJob;
@@ -11,9 +10,8 @@ import rdm.patches.RedMageEnum;
 
 // BaseMod imports
 import basemod.BaseMod;
-import basemod.interfaces.EditCardsSubscriber;
-import basemod.interfaces.EditStringsSubscriber;
-import basemod.interfaces.EditCharactersSubscriber;
+import basemod.TopPanelItem;
+import basemod.interfaces.*;
 
 // ModTheSpire imports
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
@@ -24,15 +22,22 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.localization.RelicStrings;
 
 // Third party imports
 import com.badlogic.gdx.Gdx;
 import java.nio.charset.StandardCharsets;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import rdm.patches.TopPanelItemTemplate;
+
+import static basemod.BaseMod.addRelic;
 
 @SpireInitializer
 public class RedMageMod implements
+        PostInitializeSubscriber,
+        EditRelicsSubscriber,
         EditCharactersSubscriber,
         EditStringsSubscriber,
         EditCardsSubscriber {
@@ -87,7 +92,7 @@ public class RedMageMod implements
         BaseMod.loadCustomStrings(CharacterStrings.class, characterStrings);
 
         String relicStrings = Gdx.files.internal(RedMageAssetPaths.RELIC_STRINGS.getFilePath()).readString(String.valueOf(StandardCharsets.UTF_8));
-        BaseMod.loadCustomStrings(RelicStrings.class, relicStrings);
+        BaseMod.loadCustomStrings(RelicStrings.class, TopPanelItem relicStrings);
         logger.info("Finished writing description strings.");
     }
 
@@ -97,31 +102,12 @@ public class RedMageMod implements
             - Loading cards into the game
      */
 
-    // Card Tagging
-    @SpireEnum
-    public static AbstractCard.CardTags BLACK_MANA;
-    @SpireEnum
-    public static AbstractCard.CardTags COMBINED_MANA;
-    @SpireEnum
-    public static AbstractCard.CardTags WHITE_MANA;
-
-    @SpireEnum
-    public static AbstractCard.CardTags CHAINSPELL;
-    @SpireEnum
-    public static AbstractCard.CardTags DUALCAST;
-    @SpireEnum
-    public static AbstractCard.CardTags ENCHANTED;
-    @SpireEnum
-    public static AbstractCard.CardTags MIND;
-    @SpireEnum
-    public static AbstractCard.CardTags PARALYZE;
-
-
     // Load cards into game
     public void receiveEditCards() {
         logger.info("Advancing RedMageJob level to 70.");
 
         // Starting cards
+        /*
         BaseMod.addCard(new Strike_RedMage());
         UnlockTracker.unlockCard("RedMageJob:Strike");
         BaseMod.addCard(new Defend_RedMage());
@@ -130,7 +116,7 @@ public class RedMageMod implements
         UnlockTracker.unlockCard("RedMageJob:Jolt");
         BaseMod.addCard(new Bio());
         UnlockTracker.unlockCard("RedMageJob:Bio");
-
+        */
         // Attacks
         // Enchanted Attacks
         // Skills
@@ -176,4 +162,23 @@ public class RedMageMod implements
                 RedMageEnum.REDMAGE);
         logger.info("Souls have been accounted for.");
     }
+
+    /*
+        Relic Settings
+            - Add custom relicsj
+     */
+    @Override
+    public void receiveEditRelics() {
+        //addRelic(AbstractRelic relic, RelicType type);
+    }
+
+
+    /*
+        Top Bar Settings
+            - Add balance gauge
+     */
+    public void receivePostInitialize() {
+        //BaseMod.addTopPanelItem((new TopPanelItemTemplate("test", new Texture(RedMageAssetPaths.BLACK_MANA_TOPPANEL.getFilePath()), "RDM:BlackManaTopPanel")));
+    }
 }
+

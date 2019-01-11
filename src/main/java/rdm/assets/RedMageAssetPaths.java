@@ -5,15 +5,45 @@ public enum RedMageAssetPaths {
     CARD_ENERGY_ORB("img/manaSymbol.png"),
 
     // 512
-    ATTACK_CARD("img/512/bg_attack_mystic.png"),
-    SKILL_CARD("img/512/bg_skill_mystic.png"),
-    POWER_CARD("img/512/bg_power_mystic.png"),
+    ATTACK_CARD("img/512/rdm_attack.png"),
+    ATTACK_ENCHANTED_ADDON("img/512/rdm_attack_enchanted"),
+    ATTACK_SPELL_ADDON("img/512/rdm_attack_spell"),
+    ATTACK_BLACK_MAGIC_ADDON("img/512/rdm_attack_blackmagic.png"),
+    ATTACK_WHITE_MAGIC_ADDON("img/512/rdm_attack_whitemagic.png"),
+
+    SKILL_CARD("img/512/rdm_skill.png"),
+    SKILL_ENCHANTED_ADDON("img/512/rdm_skill_enchanted"),
+    SKILL_SPELL_ADDON("img/512/rdm_skill_spell"),
+    SKILL_BLACK_MAGIC_ADDON("img/512/rdm_skill_blackmagic.png"),
+    SKILL_WHITE_MAGIC_ADDON("img/512/rdm_skill_whitemagic.png"),
+
+    POWER_CARD("img/512/rdm_power.png"),
+    POWER_ENCHANTED_ADDON("img/512/rdm_power_enchanted"),
+    POWER_SPELL_ADDON("img/512/rdm_power_spell"),
+    POWER_BLACK_MAGIC_ADDON("img/512/rdm_power_blackmagic.png"),
+    POWER_WHITE_MAGIC_ADDON("img/512/rdm_power_whitemagic.png"),
+
     ENERGY_ORB("img/512/card_mystic_orb.png"),
 
     // 1024
-    ATTACK_CARD_PORTRAIT("img/1024/bg_attack_mystic.png"),
-    SKILL_CARD_PORTRAIT("img/1024/bg_skill_mystic.png"),
-    POWER_CARD_PORTRAIT("img/1024/bg_power_mystic.png"),
+    ATTACK_CARD_PORTRAIT("img/1024/rdm_attack.png"),
+    ATTACK_ENCHANTED_ADDON_PORTRAIT("img/1024/rdm_attack_enchanted"),
+    ATTACK_SPELL_ADDON_PORTRAIT("img/1024/rdm_attack_spell"),
+    ATTACK_BLACK_MAGIC_ADDON_PORTRAIT("img/1024/rdm_attack_blackmagic.png"),
+    ATTACK_WHITE_MAGIC_ADDON_PORTRAIT("img/1024/rdm_attack_whitemagic.png"),
+
+    SKILL_CARD_PORTRAIT("img/1024/rdm_skill.png"),
+    SKILL_ENCHANTED_ADDON_PORTRAIT("img/1024/rdm_skill_enchanted"),
+    SKILL_SPELL_ADDON_PORTRAIT("img/1024/rdm_skill_spell"),
+    SKILL_BLACK_MAGIC_ADDON_PORTRAIT("img/1024/rdm_skill_blackmagic.png"),
+    SKILL_WHITE_MAGIC_ADDON_PORTRAIT("img/1024/rdm_skill_whitemagic.png"),
+
+    POWER_CARD_PORTRAIT("img/1024/rdm_power.png"),
+    POWER_ENCHANTED_ADDON_PORTRAIT("img/1024/rdm_power_enchanted"),
+    POWER_SPELL_ADDON_PORTRAIT("img/1024/rdm_power_spell"),
+    POWER_BLACK_MAGIC_ADDON_PORTRAIT("img/1024/rdm_power_blackmagic.png"),
+    POWER_WHITE_MAGIC_ADDON_PORTRAIT("img/1024/rdm_power_whitemagic.png"),
+
     ENERGY_ORB_PORTRAIT("img/1024/card_mystic_orb.png"),
 
     // charSelect
@@ -24,10 +54,16 @@ public enum RedMageAssetPaths {
     CORPSE("img/char/corpse.png"),
     SHOULDER_1("img/char/shoulder1.png"),
     SHOULDER_2("img/char/shoulder2.png"),
-    SKELETON_JSON("img/char/idle/skeleton.json"),
-    SKELETON_ATLAS("img/char/idle/skeleton.atlas"),
-    ANIMATION("/img/char/idle/Animation.scml"),
+    ANIMATION("img/char/idle/Animation.scml"),
     ORB_VFX("img/char/orb/vfx.png"),
+
+    // orbs - might be used, evoke for ultima/holy, 1-10.
+    BLACK_MANA_ORB("img/mana/rdm_orb_blackmana.png"),
+    WHITE_MANA_ORB("img/mana/rdm_orb_whitemana.png"),
+
+    // mana 1-100 for balance gauge
+    BLACK_MANA_TOPPANEL("img/mana/rdm_orb_blackmana.png"),
+    WHITE_MANA_TOPPANEL("img/mana/rdm_orb_whitemana.png"),
 
     // JSON strings
     CARD_STRINGS("localization/RedMageCards.json"),

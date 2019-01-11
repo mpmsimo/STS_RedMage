@@ -17,7 +17,7 @@ import com.megacrit.cardcrawl.powers.PoisonPower;
 public class Bio extends CustomCard {
 
     // Card description
-    public static final String ID = "RedMageJob:Bio";
+    public static final String ID = "RDM:Bio";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;

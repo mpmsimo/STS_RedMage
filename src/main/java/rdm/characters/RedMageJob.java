@@ -4,12 +4,6 @@ package rdm.characters;
 import java.util.ArrayList;
 
 // local imports
-import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.graphics.g2d.BitmapFont;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.localization.CharacterStrings;
 import rdm.RedMageMod;
 import rdm.assets.RedMageAssetPaths;
 import rdm.cards.Bio;
@@ -24,8 +18,6 @@ import rdm.patches.RedMageEnum;
 import basemod.abstracts.CustomPlayer;
 import basemod.animations.SpriterAnimation;
 
-// ModTheSpire imports
-
 // Slay the Spire imports
 import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.core.Settings;
@@ -34,16 +26,21 @@ import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.localization.CharacterStrings;
+import com.megacrit.cardcrawl.helpers.CardHelper;
 
 // third-party imports
 import com.badlogic.gdx.math.MathUtils;
-import com.esotericsoftware.spine.AnimationState;
-
+import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
 
 public class RedMageJob extends CustomPlayer {
 
     // Character Statistics
-    public static final String ID = "RDM:RedMageCharacter";
+    public static final String ID = "RDM:RedMageJob";
     private static final CharacterStrings characterStrings = CardCrawlGame.languagePack.getCharacterString(ID);
     public static final String[] NAMES = characterStrings.NAMES;
     public static final String[] TEXT = characterStrings.TEXT;
@@ -70,6 +67,7 @@ public class RedMageJob extends CustomPlayer {
             "img/char/orb/layer5d.png"
     };
 
+
     public RedMageJob(String name) {
         super(name, RedMageEnum.REDMAGE, ORB_TEXTURES, RedMageAssetPaths.ORB_VFX.getFilePath(), null, new SpriterAnimation(ANIMATION));
 
@@ -81,11 +79,6 @@ public class RedMageJob extends CustomPlayer {
                 RedMageAssetPaths.SHOULDER_1.getFilePath(),
                 RedMageAssetPaths.CORPSE.getFilePath(),
                 getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(ENERGY_PER_TURN));
-
-        loadAnimation(RedMageAssetPaths.SKELETON_ATLAS.getFilePath(), RedMageAssetPaths.SKELETON_JSON.getFilePath(), 1.0F); // if you're using modified versions of base game animations or made animations in spine make sure to include this bit and the following lines
-
-        AnimationState.TrackEntry e = this.state.setAnimation(0, "animation", true);
-        e.setTime(e.getEndTime() * MathUtils.random());
     }
 
     @Override
@@ -153,7 +146,6 @@ public class RedMageJob extends CustomPlayer {
         CardCrawlGame.screenShake.shake(ScreenShake.ShakeIntensity.MED, ScreenShake.ShakeDur.SHORT, false);
     }
 
-
     @Override
     public Color getSlashAttackColor() {
         return RedMageMod.REDMAGE_COLOR;
@@ -209,7 +201,10 @@ public class RedMageJob extends CustomPlayer {
     }
 
     @Override
-    public String getLocalizedCharacterName() {
-        return NAMES[0];
-    }
+    public String getLocalizedCharacterName() { return NAMES[0]; }
+
+    // Custom Mechanics
+
+
 }
+

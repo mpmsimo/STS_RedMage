@@ -14,7 +14,7 @@ import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 
 public class RDMSoulgem extends CustomRelic {
-    public static final String ID = "RedMageJob:RDMSoulgem";
+    public static final String ID = "RDM:RDMSoulgem";
 
     public RDMSoulgem() {
         super(ID,
