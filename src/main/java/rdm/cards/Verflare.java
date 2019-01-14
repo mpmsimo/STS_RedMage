@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import rdm.helpers.RedMageCardTags;
 
 public class Verflare extends CustomCard {
 
@@ -51,7 +52,7 @@ public class Verflare extends CustomCard {
                 //AbstractCardEnum.REDMAGE_COLOR,
                 AbstractCard.CardRarity.UNCOMMON,
                 AbstractCard.CardTarget.ENEMY);
-        tags.add(RedMageMod.BLACK_MANA);
+        tags.add(RedMageCardTags.BLACK_MAGIC);
         this.isEthereal = true;
         this.damage = this.baseDamage = ATTACK_DMG;
     }

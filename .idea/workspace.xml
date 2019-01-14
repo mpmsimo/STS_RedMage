@@ -2,23 +2,257 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b132d322-e22e-464e-a3d3-5658e6870706" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/rdm/cards/AbstractRedMageCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rdm/cards/Riposte.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rdm/helpers/RedMageCardTags.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rdm/patches/BalanceGauge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rdm/patches/TopPanelItemTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rdm/orbs/BalanceGauge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rdm/orbs/BlackManaOrb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rdm/relics/Dualcast.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/variables/TotalBlackMagicCards.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rdm/RedMageMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rdm/RedMageMod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rdm/assets/RedMageAssetPaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rdm/assets/RedMageAssetPaths.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rdm/cards/Bio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rdm/cards/Bio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rdm/cards/Defend_RedMage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rdm/cards/Defend_RedMage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rdm/cards/AbstractRedMageCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rdm/cards/AbstractRedMageCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rdm/cards/Bio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rdm/cards/Dia.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rdm/cards/Jolt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rdm/cards/Jolt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rdm/cards/Strike_RedMage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rdm/cards/Strike_RedMage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rdm/cards/Verflare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rdm/cards/Verflare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rdm/characters/RedMageJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rdm/characters/RedMageJob.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rdm/relics/RDMSoulgem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rdm/relics/RDMSoulgem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rdm/helpers/RedMageCardTags.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rdm/helpers/RedMageCardTags.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rdm/patches/BalanceGauge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rdm/patches/zz_BalanceGauge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rdm/relics/RDMSoulgem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rdm/relics/SoulOfTheRedMage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/1024/bg_arte_attack_addon_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/1024/bg_arte_attack_addon_combined.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/1024/bg_arte_attack_addon_shape.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/1024/bg_arte_skill_addon_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/1024/bg_arte_skill_addon_combined.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/1024/bg_arte_skill_addon_shape.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/1024/bg_attack_mystic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/1024/bg_power_mystic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/1024/bg_skill_mystic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/1024/bg_spell_attack_addon_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/1024/bg_spell_attack_addon_combined.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/1024/bg_spell_attack_addon_shape.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/1024/bg_spell_skill_addon_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/1024/bg_spell_skill_addon_combined.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/1024/bg_spell_skill_addon_shape.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/1024/bg_sperte_attack_addon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/1024/bg_sperte_skill_addon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/1024/card_mystic_orb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/512/bg_arte_attack_addon_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/512/bg_arte_attack_addon_combined.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/512/bg_arte_attack_addon_shape.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/512/bg_arte_skill_addon_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/512/bg_arte_skill_addon_combined.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/512/bg_arte_skill_addon_shape.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/512/bg_attack_mystic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/512/bg_power_mystic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/512/bg_skill_mystic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/512/bg_spell_attack_addon_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/512/bg_spell_attack_addon_combined.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/512/bg_spell_attack_addon_shape.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/512/bg_spell_skill_addon_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/512/bg_spell_skill_addon_combined.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/512/bg_spell_skill_addon_shape.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/512/bg_sperte_attack_addon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/512/bg_sperte_skill_addon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/512/card_mystic_orb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alacrity.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alacrity_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/allin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/allin_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/alacrity.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/alacrity_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/arcanedodge.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/arcanedodge_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/bladeddash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/bladeddash_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/bulkup.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/bulkup_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/chargedparry.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/chargedparry_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/diviningblow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/diviningblow_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/fivefootstep.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/fivefootstep_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/floatingdisk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/floatingdisk_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/flurry.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/flurry_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/fly.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/fly_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/grease.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/grease_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/greaterinvisibility.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/greaterinvisibility_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/heavystrike.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/heavystrike_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/mirrorstrike.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/mirrorstrike_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/punishingarmor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/punishingarmor_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/shockinggrasp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/shockinggrasp_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/spellcombatcombined.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/spellcombatcombined_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/spellcombatdefensive.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/spellcombatdefensive_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/spellcombatoffensive.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/spellcombatoffensive_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/vorpalthrust.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/alternate/vorpalthrust_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/arcaneaccuracy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/arcaneaccuracy_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/arcanedodge.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/arcanedodge_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/bladeburst.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/bladeburst_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/bladeddash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/bladeddash_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/blademaster.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/blademaster_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/bulkup.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/bulkup_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/chargedparry.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/chargedparry_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/defend.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/defend_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/disengage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/disengage_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/diviningblow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/diviningblow_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/doublecast.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/doublecast_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/earthenwall.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/earthenwall_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/ebbandflow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/ebbandflow_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/feint.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/feint_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/fivefootstep.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/fivefootstep_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/floatingdisk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/floatingdisk_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/flurry.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/flurry_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/fly.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/fly_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/geminiform.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/geminiform_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/grapple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/grapple_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/grease.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/grease_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/greaterinvisibility.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/greaterinvisibility_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/heavystrike.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/heavystrike_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/hunkerdown.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/hunkerdown_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/illusionofcalm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/illusionofcalm_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/keenedge.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/keenedge_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/knowledgepool.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/knowledgepool_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/magicweapon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/magicweapon_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/mightymagic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/mightymagic_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/mirrorentity.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/mirrorentity_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/mirrorstrike.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/mirrorstrike_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/momentum.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/momentum_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/natural20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/natural20_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/powerattack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/powerattack_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/powerslash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/powerslash_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/probe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/probe_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/punishingarmor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/punishingarmor_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/pureinstinct.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/pureinstinct_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/riposte.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/riposte_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/shockinggrasp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/shockinggrasp_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/spellcombat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/spellcombat_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/spellrecall.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/spellrecall_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/spellstrike.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/spellstrike_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/spontaneouscaster.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/spontaneouscaster_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/stoneskin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/stoneskin_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/strike.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/strike_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/stylechange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/stylechange_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/suddenclarity.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/suddenclarity_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/summonfamiliar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/summonfamiliar_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/tomeofspells.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/tomeofspells_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/vorpalthrust.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/cards/vorpalthrust_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/manaSymbol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/arcane accuracy power 32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/arcane accuracy power 84.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/artes played 32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/artes played 84.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/artes played next turn 32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/artes played next turn 84.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/combo caster power 32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/combo caster power 84.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/discipline power 32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/discipline power 84.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/doublecast power 32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/doublecast power 84.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/ebb power 32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/ebb power 84.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/energized purple power 32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/energized purple power 84.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/flow power 32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/flow power 84.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/fox evolution power 32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/fox evolution power 84.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/gemini form power 32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/gemini form power 84.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/haste power 32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/haste power 84.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/mighty magic power 32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/mighty magic power 84.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/mirror entity power 32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/mirror entity power 84.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/momentum power 32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/momentum power 84.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/natural20 power 32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/natural20 power 84.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/rapid caster power 32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/rapid caster power 84.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/spells played 32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/spells played 84.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/spells played next turn 32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/spells played next turn 84.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/spontaneous caster power 32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/spontaneous caster power 84.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/stoneskin power 32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/powers/stoneskin power 84.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/relics/bentspoon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/relics/bentspoon_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/relics/blessedbook.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/relics/blessedbook_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/relics/crystalball.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/relics/crystalball_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/relics/kama.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/relics/kama_p.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/localization/RedMageCards.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/localization/RedMageCards.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/localization/RedMageCharacter.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/localization/RedMageCharacter.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/localization/RedMageRelics.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/localization/RedMageRelics.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,22 +271,23 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/rdm/RedMageMod.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="708">
-              <caret line="175" column="6" lean-forward="true" selection-start-line="175" selection-start-column="6" selection-end-line="175" selection-end-column="6" />
+            <state relative-caret-position="225">
+              <caret line="143" column="16" lean-forward="true" selection-start-line="143" selection-start-column="16" selection-end-line="143" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2795#2796#0" expanded="true" />
                 <element signature="e#2827#2828#0" expanded="true" />
+                <element signature="e#6379#6380#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rdm/patches/BalanceGauge.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/rdm/cards/Dia.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="435">
+              <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,65 +296,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rdm/relics/RDMSoulgem.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/localization/RedMageCards.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../lib/BaseMod.jar!/basemod/BaseMod.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="1172" column="23" selection-start-line="1172" selection-start-column="23" selection-end-line="1172" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rdm/cards/AbstractRedMageCard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
-              <folding>
-                <element signature="e#2832#2833#0" expanded="true" />
-                <element signature="e#2883#2884#0" expanded="true" />
-                <element signature="e#2918#2919#0" expanded="true" />
-                <element signature="e#2968#2969#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rdm/helpers/RedMageCardTags.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rdm/patches/TopPanelItemTemplate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="69" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="69" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#271#272#0" expanded="true" />
-                <element signature="e#301#302#0" expanded="true" />
-                <element signature="e#347#348#0" expanded="true" />
-                <element signature="e#400#401#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="270">
+              <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -127,8 +307,69 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/rdm/assets/RedMageAssetPaths.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
+            <state relative-caret-position="375">
+              <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/variables/TotalBlackMagicCards.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="33" column="42" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#345#346#0" expanded="true" />
+                <element signature="e#374#375#0" expanded="true" />
+                <element signature="e#673#674#0" expanded="true" />
+                <element signature="e#725#726#0" expanded="true" />
+                <element signature="e#975#976#0" expanded="true" />
+                <element signature="e#1050#1051#0" expanded="true" />
+                <element signature="e#882#883#0" expanded="true" />
+                <element signature="e#924#925#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/rdm/characters/RedMageJob.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/localization/RedMageCharacter.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/rdm/relics/Dualcast.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1651#1652#0" expanded="true" />
+                <element signature="e#1688#1689#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/localization/RedMageRelics.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -153,6 +394,9 @@
       <find>localization</find>
       <find>description</find>
       <find>tag</find>
+      <find>assetpaths</find>
+      <find>BIO</find>
+      <find>BIOK</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -164,7 +408,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="RDM-character-selection" />
       </map>
     </option>
   </component>
@@ -191,22 +435,31 @@
         <option value="$PROJECT_DIR$/src/main/java/rdm/assets/RedMageImageAssets.java" />
         <option value="$PROJECT_DIR$/src/main/java/rdm/cards/Strike_RedMage.java" />
         <option value="$PROJECT_DIR$/src/main/java/rdm/cards/Defend_RedMage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/rdm/cards/Bio.java" />
-        <option value="$PROJECT_DIR$/src/main/java/rdm/cards/Jolt.java" />
-        <option value="$PROJECT_DIR$/src/main/java/rdm/cards/Verflare.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/localization/RedMageCharacter.json" />
-        <option value="$PROJECT_DIR$/src/main/resources/localization/RedMageCards.json" />
         <option value="$PROJECT_DIR$/src/main/java/rdm/patches/RedMageTags.java" />
-        <option value="$PROJECT_DIR$/src/main/java/rdm/cards/AbstractRedMageCard.java" />
-        <option value="$PROJECT_DIR$/src/main/java/rdm/characters/RedMageJob.java" />
         <option value="$PROJECT_DIR$/src/main/java/rdm/cards/Riposte.java" />
-        <option value="$PROJECT_DIR$/src/main/java/rdm/assets/RedMageAssetPaths.java" />
         <option value="$PROJECT_DIR$/src/main/java/rdm/relics/RDMSoulgem.java" />
         <option value="$PROJECT_DIR$/src/main/java/rdm/patches/BalanceGauge.java" />
         <option value="$PROJECT_DIR$/src/main/java/rdm/patches/TopPanelItem.java" />
         <option value="$PROJECT_DIR$/src/main/java/rdm/patches/TopPanelItemTemplate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rdm/orbs/BalanceGaugeOrbs.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rdm/orbs/BlackManaOrb.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rdm/orbs/BalanceGauge.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rdm/cards/Verflare.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rdm/cards/Jolt.java" />
         <option value="$PROJECT_DIR$/src/main/java/rdm/helpers/RedMageCardTags.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rdm/cards/Bio.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rdm/cards/AbstractRedMageCard.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/localization/RedMageRelics.json" />
         <option value="$PROJECT_DIR$/src/main/java/rdm/RedMageMod.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rdm/relics/Dualcast.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/localization/RedMageCharacter.json" />
+        <option value="$PROJECT_DIR$/src/main/java/rdm/characters/RedMageJob.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/localization/RedMageCards.json" />
+        <option value="$PROJECT_DIR$/src/main/java/rdm/assets/RedMageAssetPaths.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rdm/patches/RedMageDynamicVariables.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rdm/patches/RedMageBlackMagicVariable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/variables/RedMageBlackMagicVariable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/variables/TotalBlackMagicCards.java" />
       </list>
     </option>
   </component>
@@ -318,7 +571,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="rdm" type="462c0819:PsiDirectoryNode" />
-              <item name="patches" type="462c0819:PsiDirectoryNode" />
+              <item name="helpers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="STS_RedMage" type="b2602c69:ProjectViewProjectNode" />
@@ -327,7 +580,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="rdm" type="462c0819:PsiDirectoryNode" />
-              <item name="relics" type="462c0819:PsiDirectoryNode" />
+              <item name="patches" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="STS_RedMage" type="b2602c69:ProjectViewProjectNode" />
@@ -335,23 +588,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="STS_RedMage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="STS_RedMage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="STS_RedMage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="STS_RedMage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-              <item name="char" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="STS_RedMage" type="b2602c69:ProjectViewProjectNode" />
@@ -369,13 +605,14 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547197135542" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547425747251" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="rdm" />
       <recent name="rdm.helpers" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -459,7 +696,21 @@
       <option name="project" value="LOCAL" />
       <updated>1546938699357</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added balance gauge v1&#10;&#10;Major WIP, lots of bugs.">
+      <created>1547197132513</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1547197132513</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added balance gauge v1&#10;&#10;Major WIP, lots of bugs.">
+      <created>1547197151572</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1547197151572</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -475,7 +726,7 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49915397" visible="true" weight="0.16361417" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49915397" weight="0.16361417" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -498,11 +749,40 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" sideWeight="0.500846" visible="true" weight="0.11172161" />
+      <window_info anchor="right" id="Maven" order="4" sideWeight="0.500846" weight="0.11172161" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49915397" visible="true" weight="0.16361417" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Learn" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32857144" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32959184" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32857144" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50061053" side_tool="true" weight="0.32959184" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.43982494" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4993895" weight="0.35306123" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info active="true" anchor="right" id="Maven" order="4" sideWeight="0.500846" visible="true" weight="0.11172161" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -550,7 +830,9 @@
     <MESSAGE value="Add starter cards, keywords and tags" />
     <MESSAGE value="Added card strings, and more documentation" />
     <MESSAGE value="Added character selection for RDM" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added character selection for RDM" />
+    <MESSAGE value="Added balance gauge v1" />
+    <MESSAGE value="Added balance gauge v1&#10;&#10;Major WIP, lots of bugs." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added balance gauge v1&#10;&#10;Major WIP, lots of bugs." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -581,16 +863,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3405">
           <caret line="228" column="25" selection-start-line="228" selection-start-column="25" selection-end-line="228" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rdm/patches/LibraryTypeEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -644,13 +916,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/localization/RedMageRelics.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="50" column="1" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/ModTheSpire.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -679,40 +944,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/localization/RedMageCharacter.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/localization/RedMageCards.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rdm/characters/RedMageJob.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2220">
-          <caret line="206" selection-start-line="206" selection-end-line="206" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rdm/cards/Verflare.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rdm/cards/Riposte.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -725,30 +956,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rdm/cards/Jolt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rdm/cards/Bio.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rdm/assets/RedMageAssetPaths.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../lib/BaseMod.jar!/basemod/BaseMod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
@@ -756,33 +963,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rdm/cards/AbstractRedMageCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
-          <folding>
-            <element signature="e#2832#2833#0" expanded="true" />
-            <element signature="e#2883#2884#0" expanded="true" />
-            <element signature="e#2918#2919#0" expanded="true" />
-            <element signature="e#2968#2969#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rdm/relics/RDMSoulgem.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/rdm/relics/SoulOfTheRedMage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rdm/patches/BalanceGauge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -803,24 +987,174 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rdm/helpers/RedMageCardTags.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/rdm/orbs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rdm/patches/zz_BalanceGauge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rdm/cards/Jolt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="38" column="29" lean-forward="true" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rdm/cards/Verflare.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rdm/helpers/RedMageCardTags.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rdm/orbs/BalanceGauge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="171" lean-forward="true" selection-start-line="171" selection-end-line="171" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rdm/orbs/BlackManaOrb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rdm/cards/AbstractRedMageCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rdm/patches/LibraryTypeEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rdm/relics/Dualcast.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1651#1652#0" expanded="true" />
+            <element signature="e#1688#1689#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/localization/RedMageCharacter.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rdm/cards/Dia.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/localization/RedMageCards.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/localization/RedMageRelics.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rdm/assets/RedMageAssetPaths.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rdm/characters/RedMageJob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/variables/TotalBlackMagicCards.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="42" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#345#346#0" expanded="true" />
+            <element signature="e#374#375#0" expanded="true" />
+            <element signature="e#673#674#0" expanded="true" />
+            <element signature="e#725#726#0" expanded="true" />
+            <element signature="e#975#976#0" expanded="true" />
+            <element signature="e#1050#1051#0" expanded="true" />
+            <element signature="e#882#883#0" expanded="true" />
+            <element signature="e#924#925#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rdm/RedMageMod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="708">
-          <caret line="175" column="6" lean-forward="true" selection-start-line="175" selection-start-column="6" selection-end-line="175" selection-end-column="6" />
+        <state relative-caret-position="225">
+          <caret line="143" column="16" lean-forward="true" selection-start-line="143" selection-start-column="16" selection-end-line="143" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2795#2796#0" expanded="true" />
             <element signature="e#2827#2828#0" expanded="true" />
+            <element signature="e#6379#6380#0" expanded="true" />
           </folding>
         </state>
       </provider>

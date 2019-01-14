@@ -7,42 +7,43 @@ import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.VulnerablePower;
+import com.megacrit.cardcrawl.powers.PoisonPower;
 import rdm.helpers.RedMageCardTags;
 
-public class Jolt extends CustomCard {
+public class Dia extends CustomCard {
 
     // Card description
-    public static final String ID = "RDM:Jolt";
+    public static final String ID = "RDM:Dia";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String IMG_PATH = "img/cards/jolt.png";
+    public static final String IMG_PATH = "img/cards/bio.png";
 
     // Card effects
     private static final int COST = 2;
-    private static final int ATTACK_DMG = 10;
+    private static final int POTENCY = 7;
     private static final int COMBINED_MANA = 5;
 
     // Upgraded card effects
-    private static final int UPGRADE_PLUS_DMG = 5;
+    //public static final String UPGRADE_NAME = "Dia II"
+    //public static final String UPGRADE_DESCRIPTION;
+    private static final int UPGRADE_PLUS_POTENCY = 5;
     private static final int UPGRADE_PLUS_COMBINED_MANA = 5;
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(UPGRADE_PLUS_DMG);
+            this.upgradeMagicNumber(UPGRADE_PLUS_POTENCY);
         }
     }
 
-    public Jolt() {
+    public Dia() {
         super(
                 ID,
                 NAME,
@@ -54,20 +55,18 @@ public class Jolt extends CustomCard {
                 //AbstractCardEnum.REDMAGE_COLOR,
                 CardRarity.COMMON,
                 CardTarget.ENEMY);
+        tags.add(RedMageCardTags.WHITE_MAGIC);
         tags.add(RedMageCardTags.SPELL);
-        this.damage = this.baseDamage = ATTACK_DMG;
+        this.magicNumber = this.baseMagicNumber = POTENCY;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.DamageAction(m,
-                new DamageInfo(p, this.damage, this.damageTypeForTurn),
-                AbstractGameAction.AttackEffect.FIRE));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new VulnerablePower(m, this.magicNumber, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new PoisonPower(m, p, this.magicNumber), this.magicNumber, true, AbstractGameAction.AttackEffect.POISON));
     }
 
     @Override
     public AbstractCard makeCopy() {
-        return new Jolt();
+        return new Dia();
     }
 }

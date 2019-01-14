@@ -4,6 +4,7 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 
 public class RedMageCardTags {
+    @SpireEnum public static AbstractCard.CardTags SPELL;
     @SpireEnum public static AbstractCard.CardTags BLACK_MAGIC;
     @SpireEnum public static AbstractCard.CardTags WHITE_MAGIC;
     @SpireEnum public static AbstractCard.CardTags ENCHANTED;

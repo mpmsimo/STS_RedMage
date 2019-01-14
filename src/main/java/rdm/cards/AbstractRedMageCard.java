@@ -2,7 +2,7 @@ package rdm.cards;
 
 
 import rdm.characters.RedMageJob;
-import rdm.helpers.RedMageTags;
+
 
 import basemod.abstracts.CustomCard;
 import basemod.abstracts.DynamicVariable;
@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
 public class AbstractRedMageCard extends CustomCard {
     public int baseSecondMagicNumber;
     public int secondMagicNumber;
@@ -164,3 +165,4 @@ public class AbstractRedMageCard extends CustomCard {
         }
     }
 }
+*/

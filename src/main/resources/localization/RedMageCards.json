@@ -11,18 +11,18 @@
   },
   "RDM:Jolt": {
     "NAME": "Jolt",
-    "DESCRIPTION": "Deal !D! damage. Gain 5 combined mana.",
+    "DESCRIPTION": "Deal !D! damage. Gain 1 black and white mana.",
     "UPGRADE_DESCRIPTION": ""
   },
-  "RDM:Bio": {
-    "NAME": "Bio",
-    "DESCRIPTION": "Deal !D! poison. Gain 5 combined mana.",
+  "RDM:Dia": {
+    "NAME": "Dia",
+    "DESCRIPTION": "Deal !M! poison. Apply !M! Frail.",
     "UPGRADE_DESCRIPTION": ""
 
   },
   "RDM:Verflare": {
     "NAME": "Verflare",
-    "DESCRIPTION": "Deal !D! damage. Gain 10 black mana.",
+    "DESCRIPTION": "Deal !D! damage.",
     "UPGRADE_DESCRIPTION": ""
   }
 }

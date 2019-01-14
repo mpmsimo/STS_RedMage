@@ -6,12 +6,12 @@ import java.util.ArrayList;
 // local imports
 import rdm.RedMageMod;
 import rdm.assets.RedMageAssetPaths;
-import rdm.cards.Bio;
+import rdm.cards.Dia;
 import rdm.cards.Defend_RedMage;
 import rdm.cards.Jolt;
 import rdm.cards.Strike_RedMage;
 import rdm.patches.AbstractCardEnum;
-import rdm.relics.RDMSoulgem;
+import rdm.relics.Dualcast;
 import rdm.patches.RedMageEnum;
 
 // BaseMod imports
@@ -30,7 +30,6 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
-import com.megacrit.cardcrawl.helpers.CardHelper;
 
 // third-party imports
 import com.badlogic.gdx.math.MathUtils;
@@ -113,15 +112,15 @@ public class RedMageJob extends CustomPlayer {
         retVal.add(Defend_RedMage.ID);
         retVal.add(Defend_RedMage.ID);
         retVal.add(Jolt.ID);
-        retVal.add(Bio.ID);
+        retVal.add(Dia.ID);
         return retVal;
     }
 
     @Override
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
-        retVal.add(RDMSoulgem.ID);
-        UnlockTracker.markRelicAsSeen(RDMSoulgem.ID);
+        retVal.add(Dualcast.ID);
+        UnlockTracker.markRelicAsSeen(Dualcast.ID);
         return retVal;
     }
 
@@ -204,7 +203,4 @@ public class RedMageJob extends CustomPlayer {
     public String getLocalizedCharacterName() { return NAMES[0]; }
 
     // Custom Mechanics
-
-
 }
-
