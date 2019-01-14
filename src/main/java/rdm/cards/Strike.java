@@ -1,7 +1,5 @@
 package rdm.cards;
 
-import rdm.patches.AbstractCardEnum;
-
 import basemod.abstracts.CustomCard;
 import basemod.helpers.BaseModCardTags;
 
@@ -15,14 +13,14 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class Strike_RedMage extends CustomCard {
+public class Strike extends CustomCard {
 
     // Card description
     public static final String ID = "RDM:Strike";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String IMG_PATH = "img/cards/Strike_RedMage.png";
+    public static final String IMG_PATH = "img/cards/Strike.png";
 
     // Card effects
     private static final int COST = 1;
@@ -38,7 +36,7 @@ public class Strike_RedMage extends CustomCard {
         }
     }
 
-    public Strike_RedMage() {
+    public Strike() {
         super(
                 ID,
                 NAME,
@@ -65,7 +63,7 @@ public class Strike_RedMage extends CustomCard {
         );
     }
 
-    public AbstractCard makeCopy() { return new Strike_RedMage(); }
+    public AbstractCard makeCopy() { return new Strike(); }
 
     @Override
     public boolean isStrike() { return true; }
