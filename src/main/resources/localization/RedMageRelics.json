@@ -6,6 +6,13 @@
       "Allows use of RDM abilities.\n+1 Mind."
     ]
   },
+  "RDM:Dualcast": {
+    "NAME": "Dualcast",
+    "FLAVOR": "",
+    "DESCRIPTIONS": [
+      "When a spell that costs 2 mana or more is cast, the next spell will cost 0 energy."
+    ]
+  },
   "RDM:RDWSoulgem": {
     "NAME": "Soul of the Red Wizard",
     "FLAVOR": "",
@@ -41,7 +48,7 @@
       "Start combat with Enhanced Riposte which costs 0."
     ]
   },
-  "RDM:": {
+  "RDM:FencingDegen": {
     "NAME": "Fencing Degen",
     "FLAVOR": "A powerful but archaic relic, this weapon is heavy to the hand.",
     "DESCRIPTIONS": [

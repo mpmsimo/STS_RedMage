@@ -16,7 +16,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 public class Defend_RedMage extends CustomCard {
 
     // Card description
-    public static final String ID = "RedMageJob:Defend";
+    public static final String ID = "RDM:Defend";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
