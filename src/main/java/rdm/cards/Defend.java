@@ -1,7 +1,5 @@
 package rdm.cards;
 
-import rdm.patches.AbstractCardEnum;
-
 import basemod.abstracts.CustomCard;
 import basemod.helpers.BaseModCardTags;
 
@@ -13,14 +11,14 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class Defend_RedMage extends CustomCard {
+public class Defend extends CustomCard {
 
     // Card description
     public static final String ID = "RDM:Defend";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String IMG_PATH = "img/cards/Defend_RedMage.png";
+    public static final String IMG_PATH = "img/cards/Defend.png";
 
     // Card effects
     private static final int COST = 1;
@@ -36,7 +34,7 @@ public class Defend_RedMage extends CustomCard {
         }
     }
 
-    public Defend_RedMage() {
+    public Defend() {
         super(
                 ID,
                 NAME,
@@ -59,7 +57,7 @@ public class Defend_RedMage extends CustomCard {
         );
     }
 
-    public AbstractCard makeCopy() { return new Defend_RedMage(); }
+    public AbstractCard makeCopy() { return new Defend(); }
 
     @Override
     public boolean isDefend() { return true; }
