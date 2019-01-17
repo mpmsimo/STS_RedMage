@@ -149,9 +149,9 @@ public class RedMageMod implements
         logger.info("Advancing RedMageJob level to 70.");
 
         // Starting cards
-        BaseMod.addCard(new Strike_RedMage());
+        BaseMod.addCard(new Strike());
         UnlockTracker.unlockCard("RDM:Strike");
-        BaseMod.addCard(new Defend_RedMage());
+        BaseMod.addCard(new Defend());
         UnlockTracker.unlockCard("RDM:Defend");
         BaseMod.addCard(new Jolt());
         UnlockTracker.unlockCard("RDM:Jolt");
