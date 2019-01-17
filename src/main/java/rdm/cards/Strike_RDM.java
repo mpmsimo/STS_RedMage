@@ -3,62 +3,68 @@ package rdm.cards;
 import basemod.abstracts.CustomCard;
 import basemod.helpers.BaseModCardTags;
 
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class Defend extends CustomCard {
+public class Strike_RDM extends CustomCard {
 
     // Card description
-    public static final String ID = "RDM:Defend";
+    public static final String ID = "RDM:Strike_RDM";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String IMG_PATH = "img/cards/Defend.png";
+    public static final String IMG_PATH = "img/cards/Strike_RDM.png";
 
     // Card effects
     private static final int COST = 1;
-    private static final int BLOCK_AMT = 5;
+    private static final int ATTACK_DMG = 6;
 
     // Upgraded card effects
-    private static final int UPGRADE_PLUS_BLOCK = 3;
+    private static final int UPGRADE_PLUS_DMG = 3;
 
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBlock(UPGRADE_PLUS_BLOCK);
+            upgradeDamage(UPGRADE_PLUS_DMG);
         }
     }
 
-    public Defend() {
+    public Strike_RDM() {
         super(
                 ID,
                 NAME,
                 IMG_PATH,
                 COST,
                 DESCRIPTION,
-                AbstractCard.CardType.SKILL,
+                CardType.ATTACK,
                 AbstractCard.CardColor.RED,
                 //AbstractCardEnum.REDMAGE_COLOR,
-                AbstractCard.CardRarity.BASIC,
-                AbstractCard.CardTarget.SELF
+                CardRarity.BASIC,
+                CardTarget.ENEMY
         );
-        this.tags.add(BaseModCardTags.BASIC_DEFEND);
-        this.baseBlock = BLOCK_AMT;
+        this.tags.add(BaseModCardTags.BASIC_STRIKE);
+        this.baseDamage = ATTACK_DMG;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(
-                new GainBlockAction(p, p, this.block)
+                new DamageAction(
+                        m,
+                        new DamageInfo(p, this.damage, this.damageTypeForTurn),
+                        AbstractGameAction.AttackEffect.SLASH_DIAGONAL
+                )
         );
     }
 
-    public AbstractCard makeCopy() { return new Defend(); }
+    public AbstractCard makeCopy() { return new Strike_RDM(); }
 
     @Override
-    public boolean isDefend() { return true; }
+    public boolean isStrike() { return true; }
 }

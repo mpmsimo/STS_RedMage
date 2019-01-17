@@ -6,21 +6,16 @@ import rdm.cards.*;
 import rdm.characters.RedMageJob;
 import rdm.patches.AbstractCardEnum;
 import rdm.patches.RedMageEnum;
-import rdm.patches.TopPanelItemTemplate;
 import rdm.relics.Dualcast;
 
 // BaseMod imports
 import basemod.BaseMod;
-import basemod.TopPanelItem;
 import basemod.interfaces.*;
-import static basemod.BaseMod.addRelic;
 
 // ModTheSpire imports
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
-import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 
 // SlayTheSpire imports
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
@@ -149,10 +144,10 @@ public class RedMageMod implements
         logger.info("Advancing RedMageJob level to 70.");
 
         // Starting cards
-        BaseMod.addCard(new Strike());
-        UnlockTracker.unlockCard("RDM:Strike");
-        BaseMod.addCard(new Defend());
-        UnlockTracker.unlockCard("RDM:Defend");
+        BaseMod.addCard(new Strike_RDM());
+        UnlockTracker.unlockCard("RDM:Strike_RDM");
+        BaseMod.addCard(new Defend_RDM());
+        UnlockTracker.unlockCard("RDM:Defend_RDM");
         BaseMod.addCard(new Jolt());
         UnlockTracker.unlockCard("RDM:Jolt");
         BaseMod.addCard(new Dia());
