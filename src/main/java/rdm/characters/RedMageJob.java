@@ -6,10 +6,10 @@ import java.util.ArrayList;
 // local imports
 import rdm.RedMageMod;
 import rdm.assets.RedMageAssetPaths;
+import rdm.cards.Defend_RDM;
 import rdm.cards.Dia;
-import rdm.cards.Defend_RedMage;
 import rdm.cards.Jolt;
-import rdm.cards.Strike_RedMage;
+import rdm.cards.Strike_RDM;
 import rdm.patches.AbstractCardEnum;
 import rdm.relics.Dualcast;
 import rdm.patches.RedMageEnum;
@@ -103,14 +103,14 @@ public class RedMageJob extends CustomPlayer {
     @Override
     public ArrayList<String> getStartingDeck() {
         ArrayList<String> retVal = new ArrayList<>();
-        retVal.add(Strike_RedMage.ID);
-        retVal.add(Strike_RedMage.ID);
-        retVal.add(Strike_RedMage.ID);
-        retVal.add(Strike_RedMage.ID);
-        retVal.add(Defend_RedMage.ID);
-        retVal.add(Defend_RedMage.ID);
-        retVal.add(Defend_RedMage.ID);
-        retVal.add(Defend_RedMage.ID);
+        retVal.add(Strike_RDM.ID);
+        retVal.add(Strike_RDM.ID);
+        retVal.add(Strike_RDM.ID);
+        retVal.add(Strike_RDM.ID);
+        retVal.add(Defend_RDM.ID);
+        retVal.add(Defend_RDM.ID);
+        retVal.add(Defend_RDM.ID);
+        retVal.add(Defend_RDM.ID);
         retVal.add(Jolt.ID);
         retVal.add(Dia.ID);
         return retVal;
